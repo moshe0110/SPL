@@ -13,7 +13,7 @@ class DataInsertService:
     @staticmethod
     @DataInsertServiceBlueprint.route('/loadCSV', methods=['GET', 'POST'])
     @Auth.auth.login_required
-    def serveLoadingPage():
+
         return render_template("loadCSV.html", title='Load CSV')
 
     @staticmethod
